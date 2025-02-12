@@ -6,8 +6,8 @@
       <class name="run.Elements">
         <methods>
           <include name="tearDown"/>
-          <include name="checkBoxM"/>
           <include name="setUp"/>
+          <include name="radioButtonM"/>
         </methods>
       </class> <!-- run.Elements -->
     </classes>

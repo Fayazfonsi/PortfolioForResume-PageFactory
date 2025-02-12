@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Asus\AppData\Local\Temp\testng-eclipse-12382282\testng-customsuite.xml</span>
+                    <span>C:\Users\Asus\AppData\Local\Temp\testng-eclipse--1291711729\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -109,7 +109,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="run.Elements" class="method navigator-link" hash-for-method="radioButtonM">radioButtonM</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="run.Elements" class="method navigator-link" hash-for-method="textBoxM">textBoxM</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="run.Elements" class="method navigator-link" hash-for-method="webTableM">webTableM</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -139,9 +149,23 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="radioButtonM">
+                  </a> <!-- radioButtonM -->
+                  <span class="method-name">radioButtonM</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="textBoxM">
                   </a> <!-- textBoxM -->
                   <span class="method-name">textBoxM</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="webTableM">
+                  </a> <!-- webTableM -->
+                  <span class="method-name">webTableM</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -149,7 +173,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Asus\AppData\Local\Temp\testng-eclipse-12382282\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Asus\AppData\Local\Temp\testng-eclipse--1291711729\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -198,20 +222,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'textBoxM')
 data.setCell(0, 2, 'run.Elements')
-data.setCell(0, 3, 41965);
+data.setCell(0, 3, 142077);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'checkBoxM')
+data.setCell(1, 1, 'webTableM')
 data.setCell(1, 2, 'run.Elements')
-data.setCell(1, 3, 1128);
+data.setCell(1, 3, 2837);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'checkBoxM')
+data.setCell(2, 2, 'run.Elements')
+data.setCell(2, 3, 1362);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'radioButtonM')
+data.setCell(3, 2, 'run.Elements')
+data.setCell(3, 3, 357);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 43 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -244,15 +276,23 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">textBoxM</span>
-                <span class="method-start">1485 ms</span>
+                <span class="method-start">1747 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkBoxM</span>
-                <span class="method-start">43455 ms</span>
+                <span class="method-start">143831 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">radioButtonM</span>
+                <span class="method-start">145195 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">webTableM</span>
+                <span class="method-start">145553 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">44647 ms</span>
+                <span class="method-start">148468 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

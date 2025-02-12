@@ -47,12 +47,7 @@ public class CheckBox extends BasePage {
 	
 	
 	
-	
-	
-	
-	
-	
-	
+
 
 	public CheckBox(WebDriver driver) {
 		super(driver);
