@@ -9,7 +9,7 @@ import org.testng.Assert;
 
 public class CheckBox extends BasePage {
 	
-	@FindBy(xpath = "(//li)[2]")
+	@FindBy(xpath = "//div[@class='left-pannel']//li[@id='item-1']")
 	WebElement checkBoxModule;
 	
 	@FindBy(xpath = "(//button)[4]")
@@ -56,7 +56,7 @@ public class CheckBox extends BasePage {
 	
 	public void checkBoxPage() {
 		
-		scrollUp();
+		//scrollUp();
 		checkBoxModule.click();
 		scrolldown();
 		homeArrow.click();
@@ -69,9 +69,9 @@ public class CheckBox extends BasePage {
 		workspace.click();
 		command.click();
 		notes.click();
-		scrollUp();
+		//scrollUp();
 		String opts = outputHome.getText();
-		System.out.println(opts);
+//		System.out.println(opts);
 		
 		Assert.assertEquals(opts, "home");
 		

@@ -1,14 +1,16 @@
 package page;
 
+import java.awt.Window;
 import java.util.Iterator;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openxmlformats.schemas.wordprocessingml.x2006.main.CTFFName;
 
 public class WebTable extends BasePage {
 	
-	@FindBy(xpath = "(//li)[4]")
+	@FindBy(xpath = "//div[@class='left-pannel']//li[@id='item-3']")
 	WebElement webtableModule;
 	
 	@FindBy(css = "#addNewRecordButton")
@@ -46,11 +48,10 @@ public class WebTable extends BasePage {
 		
 		webtableModule.click();
 		
-		int j=0;
-		for (int i = 0; i <=2; i++) {
+		
 			
 	
-		add.click();
+		
 		
 		String fname [] = {"peter","Quagmire","meg"};
 		String lname [] = {"greffin","gigidy","brain"};
@@ -59,6 +60,9 @@ public class WebTable extends BasePage {
 		String slry [] = {"16000000","18000000","210000000"};
 		String dpmt [] = {"ECE","CT","IT"};
 		
+		
+		for (int i = 0; i < fname.length ; i++) {
+		add.click();
 		firstName.sendKeys(fname[i]);
 		lastName.sendKeys(lname[i]);
 		email.sendKeys(eml[i]);
@@ -68,7 +72,6 @@ public class WebTable extends BasePage {
 		submit.click();
 		
 		}
-		j++;
 		
 	}
 	

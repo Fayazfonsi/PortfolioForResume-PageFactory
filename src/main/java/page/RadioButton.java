@@ -7,7 +7,7 @@ import org.testng.Assert;
 
 public class RadioButton extends BasePage {
 	
-	@FindBy(xpath = "(//li)[3]")
+	@FindBy(xpath = "//div[@class='left-pannel']//li[@id='item-2']")
 	WebElement radioButtonMobule;
 	
 	@FindBy(xpath = "(//div)[60]")
@@ -25,7 +25,7 @@ public class RadioButton extends BasePage {
 	}
 	
 	public void radiobuttonPage() {
-		scrollUp();
+		//scrollUp();
 		radioButtonMobule.click();
 //		String impressivee = impressive.getText();
 //		System.out.println(impressivee);
