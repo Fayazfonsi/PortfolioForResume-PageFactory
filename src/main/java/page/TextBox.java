@@ -48,19 +48,10 @@ public class TextBox extends BasePage {
 		// TODO Auto-generated constructor stub
 	}
 	
-	@DataProvider(name = "details")
-	public Object[][] getTextBoxDetails(){
-		return new Object[][] {
-			{"kundan","potatao@gmail.com","poo pandhal teru","kotameadu"}
-			
-		};
-		
-		
-	}
 	
 	
 	
-	@Test(dataProvider = "details")
+	@Test(dataProvider = "TextBox")
 	public void textBoxPag(String fname, String femail, String cAdd, String pAdd) {
 		explicitWait(By.xpath("(//span)[4]"));
 		tesxBoxModule.click();
@@ -69,7 +60,7 @@ public class TextBox extends BasePage {
 		email.sendKeys(femail);
 		currentAddress.sendKeys(cAdd);
 		permenentAddress.sendKeys(pAdd);
-		//scrolldown();
+		scrolldown();
 		submit.click();
 		
 		
@@ -77,28 +68,7 @@ public class TextBox extends BasePage {
 	
 	
 
-//	public void textBoxPag1() {
-//		tesxBoxModule.click();
-//		scrolldown();
-//		fullName.sendKeys("kundan");
-//		email.sendKeys("potatao@gmail.com");
-//		currentAddress.sendKeys("poo pandhal teru");
-//		permenentAddress.sendKeys("kotameadu");
-//		scrolldown();
-//		submit.click();
-//		String nm = oname.getText();
-//		String oe = oemail.getText();
-//		String ocaa = oca.getText();
-//		String opaa = opa.getText();
-//
-//		Assert.assertEquals(nm, "Name:kundan");
-//		Assert.assertEquals(oe, "Email:potatao@gmail.com");
-//		Assert.assertEquals(ocaa, "Current Address :poo pandhal teru");
-//		Assert.assertEquals(opaa, "Permananet Address :kotameadu");
-//
-//		// System.out.println(opaa);
-//
-//	}
+
 	
 	
 

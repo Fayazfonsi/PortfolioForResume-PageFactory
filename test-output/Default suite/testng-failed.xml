@@ -6,12 +6,7 @@
       <class name="run.Elements">
         <methods>
           <include name="tearDown"/>
-          <include name="checkBoxM"/>
-          <include name="textBoxPagee"/>
-          <include name="buttonM"/>
           <include name="setUp"/>
-          <include name="textBoxM"/>
-          <include name="webTableM"/>
           <include name="radioButtonM"/>
         </methods>
       </class> <!-- run.Elements -->

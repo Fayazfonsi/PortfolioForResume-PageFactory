@@ -1,4 +1,5 @@
 package run;
+
 import org.testng.annotations.Test;
 
 import page.Buttonn;
@@ -20,7 +21,6 @@ public class Elements {
 	private RadioButton radioButton;
 	private WebTable webTable;
 	private Buttonn buttonn;
-	
 
 	@Test(priority = 0)
 	public void textBoxM() {
@@ -29,13 +29,11 @@ public class Elements {
 		textBox.maximize();
 
 	}
-	
-	
-	@Test(priority = 1, dataProvider = "details")
-	public void textBoxPagee(String fname, String femail, String cAdd, String pAdd)  {
+
+	@Test(priority = 1, dataProvider = "TextBox", dataProviderClass = page.TestDataProvider.class)
+	public void textBoxPage(String fname, String femail, String cAdd, String pAdd) {
 		textBox.textBoxPag(fname, femail, cAdd, pAdd);
 	}
-	
 
 	@Test(priority = 2)
 
@@ -66,9 +64,9 @@ public class Elements {
 	public void setUp() {
 //		System.setProperty("webdriver.chrome.driver",
 //				"D:\\chrome driver\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
-		
+
 		driver = DriverManager.getDriver();
-		
+
 		textBox = new TextBox(driver);
 		checkBox = new CheckBox(driver);
 		radioButton = new RadioButton(driver);
@@ -80,10 +78,7 @@ public class Elements {
 	@AfterSuite
 	public void tearDown() {
 		DriverManager.quitDriver();
-		
-		
-		}
 
-	
+	}
 
 }
