@@ -9,6 +9,8 @@ import page.TextBox;
 import page.WebTable;
 import org.testng.annotations.BeforeSuite;
 
+import javax.swing.text.Utilities;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
 import utilities.DriverManager;
@@ -30,7 +32,7 @@ public class Elements {
 
 	}
 
-	@Test(priority = 1, dataProvider = "TextBox", dataProviderClass = page.TestDataProvider.class)
+	@Test(priority = 1, dataProvider = "TextBox", dataProviderClass = utilities.TestDataProvider.class)
 	public void textBoxPage(String fname, String femail, String cAdd, String pAdd) {
 		textBox.textBoxPag(fname, femail, cAdd, pAdd);
 	}
