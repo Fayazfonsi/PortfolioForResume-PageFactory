@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-26T14:24:32 SGT" name="Default suite" finished-at="2025-02-26T14:25:07 SGT" duration-ms="34924">
+  <suite started-at="2025-03-06T01:27:14 SGT" name="Default suite" finished-at="2025-03-06T01:28:53 SGT" duration-ms="99249">
     <groups>
     </groups>
-    <test started-at="2025-02-26T14:24:32 SGT" name="Default test" finished-at="2025-02-26T14:25:07 SGT" duration-ms="34924">
+    <test started-at="2025-03-06T01:27:14 SGT" name="Default test" finished-at="2025-03-06T01:28:53 SGT" duration-ms="99249">
       <class name="run.Elements">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:run.Elements@54a7079e]" started-at="2025-02-26T14:24:31 SGT" name="setUp" finished-at="2025-02-26T14:24:32 SGT" duration-ms="1701" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:run.Elements@26e356f0]" started-at="2025-03-06T01:27:12 SGT" name="setUp" finished-at="2025-03-06T01:27:14 SGT" duration-ms="2061" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="textBoxM()[pri:0, instance:run.Elements@54a7079e]" started-at="2025-02-26T14:24:33 SGT" name="textBoxM" finished-at="2025-02-26T14:25:03 SGT" duration-ms="30691" status="PASS">
+        <test-method signature="textBoxM()[pri:0, instance:run.Elements@26e356f0]" started-at="2025-03-06T01:27:14 SGT" name="textBoxM" finished-at="2025-03-06T01:28:23 SGT" duration-ms="68296" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- textBoxM -->
-        <test-method signature="textBoxPage(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:run.Elements@54a7079e]" started-at="2025-02-26T14:25:03 SGT" name="textBoxPage" data-provider="TextBox" finished-at="2025-02-26T14:25:04 SGT" duration-ms="597" status="PASS">
+        <test-method signature="textBoxPage(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:run.Elements@26e356f0]" started-at="2025-03-06T01:28:23 SGT" name="textBoxPage" data-provider="TextBox" finished-at="2025-03-06T01:28:23 SGT" duration-ms="730" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,23 +41,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- textBoxPage -->
-        <test-method signature="checkBoxM()[pri:2, instance:run.Elements@54a7079e]" started-at="2025-02-26T14:25:04 SGT" name="checkBoxM" finished-at="2025-02-26T14:25:05 SGT" duration-ms="911" status="PASS">
+        <test-method signature="checkBoxM()[pri:2, instance:run.Elements@26e356f0]" started-at="2025-03-06T01:28:23 SGT" name="checkBoxM" finished-at="2025-03-06T01:28:25 SGT" duration-ms="1542" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkBoxM -->
-        <test-method signature="radioButtonM()[pri:3, instance:run.Elements@54a7079e]" started-at="2025-02-26T14:25:05 SGT" name="radioButtonM" finished-at="2025-02-26T14:25:05 SGT" duration-ms="178" status="PASS">
+        <test-method signature="radioButtonM()[pri:3, instance:run.Elements@26e356f0]" started-at="2025-03-06T01:28:25 SGT" name="radioButtonM" finished-at="2025-03-06T01:28:25 SGT" duration-ms="303" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- radioButtonM -->
-        <test-method signature="webTableM()[pri:4, instance:run.Elements@54a7079e]" started-at="2025-02-26T14:25:05 SGT" name="webTableM" finished-at="2025-02-26T14:25:07 SGT" duration-ms="2147" status="PASS">
+        <test-method signature="webTableM()[pri:4, instance:run.Elements@26e356f0]" started-at="2025-03-06T01:28:25 SGT" name="webTableM" finished-at="2025-03-06T01:28:28 SGT" duration-ms="2722" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- webTableM -->
-        <test-method signature="buttonM()[pri:5, instance:run.Elements@54a7079e]" started-at="2025-02-26T14:25:07 SGT" name="buttonM" finished-at="2025-02-26T14:25:07 SGT" duration-ms="340" status="PASS">
+        <test-method signature="buttonM()[pri:5, instance:run.Elements@26e356f0]" started-at="2025-03-06T01:28:28 SGT" name="buttonM" finished-at="2025-03-06T01:28:29 SGT" duration-ms="777" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- buttonM -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:run.Elements@54a7079e]" started-at="2025-02-26T14:25:07 SGT" name="tearDown" finished-at="2025-02-26T14:25:08 SGT" duration-ms="483" status="PASS">
+        <test-method signature="linkModule()[pri:6, instance:run.Elements@26e356f0]" started-at="2025-03-06T01:28:29 SGT" name="linkModule" finished-at="2025-03-06T01:28:53 SGT" duration-ms="24785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkModule -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:run.Elements@26e356f0]" started-at="2025-03-06T01:28:54 SGT" name="tearDown" finished-at="2025-03-06T01:28:54 SGT" duration-ms="352" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

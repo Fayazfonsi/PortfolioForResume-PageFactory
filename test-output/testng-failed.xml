@@ -7,7 +7,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="textBoxPage"/>
+          <include name="radioButtonM"/>
         </methods>
       </class> <!-- run.Elements -->
     </classes>

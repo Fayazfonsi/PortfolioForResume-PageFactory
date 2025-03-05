@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 
 import page.Buttonn;
 import page.CheckBox;
+import page.Links;
 import page.RadioButton;
 import page.TextBox;
 import page.WebTable;
@@ -23,6 +24,7 @@ public class Elements {
 	private RadioButton radioButton;
 	private WebTable webTable;
 	private Buttonn buttonn;
+	private Links links;
 
 	@Test(priority = 0)
 	public void textBoxM() {
@@ -36,6 +38,7 @@ public class Elements {
 	public void textBoxPage(String fname, String femail, String cAdd, String pAdd) {
 		textBox.textBoxPag(fname, femail, cAdd, pAdd);
 	}
+	
 
 	@Test(priority = 2)
 
@@ -61,6 +64,11 @@ public class Elements {
 		buttonn.buttonPage();
 
 	}
+	@Test(priority = 6)
+	public void linkModule() {
+		links.linksPage();
+		
+	}
 
 	@BeforeSuite
 	public void setUp() {
@@ -74,6 +82,8 @@ public class Elements {
 		radioButton = new RadioButton(driver);
 		webTable = new WebTable(driver);
 		buttonn = new Buttonn(driver);
+		links = new Links(driver);
+		
 
 	}
 
